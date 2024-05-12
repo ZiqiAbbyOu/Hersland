@@ -8,11 +8,12 @@ namespace HL.Character.Player
     /// <summary>
     /// The player controller including movement
     /// </summary>
-    public class PlayerController : MonoBehaviour
+    public class PlayerMovementController : MonoBehaviour
     {
         public float speed = 5.0f;
         public float rotationSpeed = 700.0f;
         private Rigidbody rb;
+        public Transform cameraTransform;
 
         // Start is called before the first frame update
         void Start()
@@ -31,7 +32,9 @@ namespace HL.Character.Player
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
 
-            Vector3 movement = transform.right * horizontal + transform.forward * vertical;
+            Vector3 movement = cameraTransform.right * horizontal + cameraTransform.forward * vertical;
+
+            movement.y = 0; // ignore camera's y rotation
 
             // Move and rotate the player
             if (movement.magnitude > 0.1f )

@@ -15,6 +15,11 @@ public class NPCMovementController : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        
+    }
+
+    private void Update()
+    {
         agent.destination = destination.position;
     }
 
