@@ -26,7 +26,7 @@ namespace HL.Character
         
 
         protected float[] propertyStats = new float[5];
-        protected string[] propertyDiscription = new string[5];
+        protected string[] propertyDescription = new string[5];
 
 
         protected virtual void Awake()
@@ -44,7 +44,7 @@ namespace HL.Character
             for (int i = 0; i < propertyStats.Length; i++)
             {
                 propertyStats[i] = 0f;
-                propertyDiscription[i] = string.Empty;
+                propertyDescription[i] = string.Empty;
             }
             
         }
@@ -72,7 +72,7 @@ namespace HL.Character
         /// </summary>
         /// <param name="property">The property type to access</param>
         /// <returns>The discription for the specified property</returns>
-        public string GetPropertyDiscription(Property property)
+        public string GetPropertyDescription(Property property)
         {
             int propertyArrayInt = GetPropertyArrayInt(property);
 
@@ -81,7 +81,7 @@ namespace HL.Character
                 Debug.LogError("Property index out of range.");
                 return "";
             }
-            return propertyDiscription[propertyArrayInt];
+            return propertyDescription[propertyArrayInt];
         }
 
 
