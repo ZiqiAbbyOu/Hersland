@@ -420,7 +420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27401647, y: -0.000000044675836, z: 0.000000012729122, w: 0.96172506}
+  m_LocalRotation: {x: 0.27401647, y: -0.000000044676064, z: 0.000000012729187, w: 0.96172506}
   m_LocalPosition: {x: 15.798931, y: 0.7820401, z: 14.525469}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -916,7 +916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767280804}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.060424827, y: -0.000000051972666, z: 0.000000036759243, w: 0.99817276}
+  m_LocalRotation: {x: 0.060424827, y: -0.000000016861195, z: 0.000000011925591, w: 0.99817276}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1412,7 +1412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502445890}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0565008, y: -0.0000000778137, z: 0.000000042368764, w: 0.99840254}
+  m_LocalRotation: {x: -0.0565008, y: -0.00000007781587, z: 0.000000042369944, w: 0.99840254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1491,8 +1491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577840570}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0011536777, y: -0.000000056215608, z: 0.000000034954276,
-    w: 0.9999994}
+  m_LocalRotation: {x: 0.0011536777, y: -0.000000056218184, z: 0.00000003495588, w: 0.9999994}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1694,7 +1693,7 @@ PrefabInstance:
     - target: {fileID: 464498023074170601, guid: 6a4bd539d7134184aaf41e97a1759b35,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20
+      value: 33.22
       objectReference: {fileID: 0}
     - target: {fileID: 464498023074170601, guid: 6a4bd539d7134184aaf41e97a1759b35,
         type: 3}

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 3166049486067779814}
   - component: {fileID: 4131681594971579656}
   - component: {fileID: 729110159087996814}
+  - component: {fileID: 5650597792108538830}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -131,6 +132,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   agent: {fileID: 4131681594971579656}
+--- !u!114 &5650597792108538830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451594649261214202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab42461172f91044d9ab835a821c067f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wuXingPropertyStats:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  wuXingPropertyDescriptions:
+  - Jin_Personality_Description
+  - Mu_Personality_Description
+  - Shui_Personality_Description
+  - Huo_Personality_Description
+  - Tu_Personality_Description
 --- !u!1 &4942002782098780051
 GameObject:
   m_ObjectHideFlags: 0
