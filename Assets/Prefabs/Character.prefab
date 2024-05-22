@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 729110159087996814}
   - component: {fileID: 5650597792108538830}
   - component: {fileID: 8498125218099576644}
+  - component: {fileID: -5476800553909606609}
+  - component: {fileID: -3264937966482823585}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -93,13 +95,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3451594649261214202}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de9e4d93702f8c240ac5aa1faa6609e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: {fileID: 0}
   agent: {fileID: 4131681594971579656}
+  terrain: {fileID: 0}
+  timer: 0
+  waitTime: 0
 --- !u!114 &5650597792108538830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +151,55 @@ CapsuleCollider:
   m_Height: 1.6717271
   m_Direction: 1
   m_Center: {x: 0, y: 0.8360042, z: 0}
+--- !u!114 &-5476800553909606609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451594649261214202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 1
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 01000000
+    VectorActionSize: 01000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: NPCAgent
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
+--- !u!114 &-3264937966482823585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451594649261214202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528f42753d0935d4ba51c57d7467a1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  navMeshAgent: {fileID: 0}
+  personality: {fileID: 0}
+  trainingMode: 0
 --- !u!1001 &7299571371058373350
 PrefabInstance:
   m_ObjectHideFlags: 0

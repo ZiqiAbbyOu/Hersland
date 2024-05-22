@@ -40,11 +40,7 @@ namespace HL.Character
         protected virtual void InitializeInfos()
         {
             // Default initialization 
-            for (int i = 0; i < wuXingPropertyStats.Length; i++)
-            {
-                //wuXingPropertyStats[i] = 0f;
-                //wuXingPropertyDescriptions[i] = string.Empty;
-            }
+            SetRandomPropertyStats();
             
         }
 
@@ -123,6 +119,14 @@ namespace HL.Character
                 Debug.LogError("Property index out of range.");
             }
             wuXingPropertyDescriptions[propertyArrayInt] = newDescription;
+        }
+    
+        public void SetRandomPropertyStats()
+        {
+            for (int i = 0; i < wuXingPropertyStats.Length; i++)
+            {
+                wuXingPropertyStats[i] = UnityEngine.Random.Range(-1f, 1f);
+            }
         }
     }
 }
